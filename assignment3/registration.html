@@ -3,376 +3,167 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Registration - TechFest 2025</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>TechFest 2025 - Registration</title>
 </head>
-<body>
-    <header>
-        <nav>
-            <div class="logo">
-                <h1>TechFest 2025</h1>
-            </div>
-            <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="events.html">Events</a></li>
-                <li><a href="schedule.html">Schedule</a></li>
-                <li><a href="registration.html" class="active">Registration</a></li>
-                <li><a href="gallery.html">Gallery</a></li>
-                <li><a href="contact.html">Contact & FAQ</a></li>
-            </ul>
-        </nav>
+<body style="font-family: Arial, sans-serif; margin: 0; background-color: bisque;">
+    <nav style="background-color: #2c3e50; padding: 10px; text-align: center;">
+        <a href="home.html" style="color: white; text-decoration: none; margin: 0 10px; padding: 8px 12px; background-color: #34495e;">Home</a>
+        <a href="events.html" style="color: white; text-decoration: none; margin: 0 10px; padding: 8px 12px; background-color: #34495e;">Events</a>
+        <a href="schedule.html" style="color: white; text-decoration: none; margin: 0 10px; padding: 8px 12px; background-color: #34495e;">Schedule</a>
+        <a href="registration.html" style="color: white; text-decoration: none; margin: 0 10px; padding: 8px 12px; background-color: #34495e;">Registration</a>
+        <a href="gallery.html" style="color: white; text-decoration: none; margin: 0 10px; padding: 8px 12px; background-color: #34495e;">Gallery</a>
+        <a href="contact.html" style="color: white; text-decoration: none; margin: 0 10px; padding: 8px 12px; background-color: #34495e;">Contact & FAQs</a>
+    </nav>
+
+    <header style="background-color: #1abc9c; color: white; text-align: center; padding: 30px 20px;">
+        <h1>Event Registration</h1>
+        <p>Register now to secure your spot!</p>
     </header>
 
-    <main>
-        <section class="page-header">
-            <div class="container">
-                <h1>Event Registration</h1>
-                <p>Register for TechFest 2025 competitions and be part of the excitement!</p>
-            </div>
+    <main style="max-width: 600px; margin: 20px auto; padding: 0 20px;">
+        <section style="background-color: white; padding: 30px;">
+            <h2 style="text-align: center; margin-bottom: 30px;">Participant Registration Form</h2>
+            
+            <form style="max-width: 500px; margin: 0 auto;">
+                <div style="margin-bottom: 15px;">
+                    <label for="fullName" style="display: block; margin-bottom: 5px; font-weight: bold;">Full Name *</label>
+                    <input type="text" id="fullName" name="fullName" required style="width: 100%; padding: 10px; border: 1px solid #ccc;">
+                </div>
+
+                <div style="margin-bottom: 15px;">
+                    <label for="email" style="display: block; margin-bottom: 5px; font-weight: bold;">Email Address *</label>
+                    <input type="email" id="email" name="email" required style="width: 100%; padding: 10px; border: 1px solid #ccc;">
+                </div>
+
+                <div style="margin-bottom: 15px;">
+                    <label for="phone" style="display: block; margin-bottom: 5px; font-weight: bold;">Phone Number *</label>
+                    <input type="tel" id="phone" name="phone" required style="width: 100%; padding: 10px; border: 1px solid #ccc;">
+                </div>
+
+                <div style="margin-bottom: 15px;">
+                    <label for="college" style="display: block; margin-bottom: 5px; font-weight: bold;">College/University *</label>
+                    <input type="text" id="college" name="college" required style="width: 100%; padding: 10px; border: 1px solid #ccc;">
+                </div>
+
+                <div style="margin-bottom: 15px;">
+                    <label for="year" style="display: block; margin-bottom: 5px; font-weight: bold;">Year of Study *</label>
+                    <select id="year" name="year" required style="width: 100%; padding: 10px; border: 1px solid #ccc;">
+                        <option value="">Select Year</option>
+                        <option value="1st">1st Year</option>
+                        <option value="2nd">2nd Year</option>
+                        <option value="3rd">3rd Year</option>
+                        <option value="4th">4th Year</option>
+                        <option value="graduate">Graduate</option>
+                        <option value="postgraduate">Post Graduate</option>
+                    </select>
+                </div>
+
+                <div style="margin-bottom: 15px;">
+                    <label for="branch" style="display: block; margin-bottom: 5px; font-weight: bold;">Branch/Stream *</label>
+                    <select id="branch" name="branch" required style="width: 100%; padding: 10px; border: 1px solid #ccc;">
+                        <option value="">Select Branch</option>
+                        <option value="cse">Computer Science Engineering</option>
+                        <option value="it">Information Technology</option>
+                        <option value="ece">Electronics & Communication</option>
+                        <option value="eee">Electrical & Electronics</option>
+                        <option value="mechanical">Mechanical Engineering</option>
+                        <option value="civil">Civil Engineering</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+
+                <div style="margin-bottom: 20px;">
+                    <label style="display: block; margin-bottom: 8px; font-weight: bold; color: #2c3e50;">Events to Participate * (Select multiple)</label>
+                    <div style="border: 2px solid #bdc3c7; border-radius: 5px; padding: 15px; background-color: #f8f9fa;">
+                        <label style="display: block; margin-bottom: 8px; font-weight: normal;">
+                            <input type="checkbox" name="events" value="codemaster" style="margin-right: 8px;">
+                            CodeMaster Challenge
+                        </label>
+                        <label style="display: block; margin-bottom: 8px; font-weight: normal;">
+                            <input type="checkbox" name="events" value="speed-programming" style="margin-right: 8px;">
+                            Speed Programming
+                        </label>
+                        <label style="display: block; margin-bottom: 8px; font-weight: normal;">
+                            <input type="checkbox" name="events" value="debugging" style="margin-right: 8px;">
+                            Debugging Derby
+                        </label>
+                        <label style="display: block; margin-bottom: 8px; font-weight: normal;">
+                            <input type="checkbox" name="events" value="line-following" style="margin-right: 8px;">
+                            Line Following Robot
+                        </label>
+                        <label style="display: block; margin-bottom: 8px; font-weight: normal;">
+                            <input type="checkbox" name="events" value="sumo-bot" style="margin-right: 8px;">
+                            Sumo Bot Challenge
+                        </label>
+                        <label style="display: block; margin-bottom: 8px; font-weight: normal;">
+                            <input type="checkbox" name="events" value="obstacle-nav" style="margin-right: 8px;">
+                            Obstacle Navigation
+                        </label>
+                        <label style="display: block; margin-bottom: 8px; font-weight: normal;">
+                            <input type="checkbox" name="events" value="frontend" style="margin-right: 8px;">
+                            Frontend Showdown
+                        </label>
+                        <label style="display: block; margin-bottom: 8px; font-weight: normal;">
+                            <input type="checkbox" name="events" value="fullstack" style="margin-right: 8px;">
+                            Full Stack Marathon
+                        </label>
+                        <label style="display: block; margin-bottom: 8px; font-weight: normal;">
+                            <input type="checkbox" name="events" value="mobile-app" style="margin-right: 8px;">
+                            Mobile App Challenge
+                        </label>
+                        <label style="display: block; margin-bottom: 8px; font-weight: normal;">
+                            <input type="checkbox" name="events" value="ml-hackathon" style="margin-right: 8px;">
+                            ML Hackathon
+                        </label>
+                        <label style="display: block; margin-bottom: 8px; font-weight: normal;">
+                            <input type="checkbox" name="events" value="data-viz" style="margin-right: 8px;">
+                            Data Visualization Contest
+                        </label>
+                        <label style="display: block; margin-bottom: 8px; font-weight: normal;">
+                            <input type="checkbox" name="events" value="ai-ethics" style="margin-right: 8px;">
+                            AI Ethics Debate
+                        </label>
+                    </div>
+                </div>
+
+                <div style="margin-bottom: 20px;">
+                    <label for="team-members" style="display: block; margin-bottom: 8px; font-weight: bold; color: #2c3e50;">Team Members (if any)</label>
+                    <textarea id="team-members" name="team-members" rows="3" placeholder="Enter team member names and their contact details (for team events)" style="width: 100%; padding: 12px; border: 2px solid #bdc3c7; border-radius: 5px; font-size: 1em; box-sizing: border-box; resize: vertical;"></textarea>
+                </div>
+
+                <div style="margin-bottom: 20px;">
+                    <label for="dietary" style="display: block; margin-bottom: 8px; font-weight: bold; color: #2c3e50;">Dietary Requirements</label>
+                    <select id="dietary" name="dietary" style="width: 100%; padding: 12px; border: 2px solid #bdc3c7; border-radius: 5px; font-size: 1em; box-sizing: border-box;">
+                        <option value="none">No dietary restrictions</option>
+                        <option value="vegetarian">Vegetarian</option>
+                        <option value="vegan">Vegan</option>
+                        <option value="halal">Halal</option>
+                        <option value="other">Other (please specify in comments)</option>
+                    </select>
+                </div>
+
+                <div style="margin-bottom: 30px;">
+                    <label for="comments" style="display: block; margin-bottom: 8px; font-weight: bold; color: #2c3e50;">Additional Comments</label>
+                    <textarea id="comments" name="comments" rows="3" placeholder="Any additional information or special requirements" style="width: 100%; padding: 12px; border: 2px solid #bdc3c7; border-radius: 5px; font-size: 1em; box-sizing: border-box; resize: vertical;"></textarea>
+                </div>
+
+                <button type="submit" style="width: 100%; background-color: #5fb659; color: white; padding: 15px; border: none; border-radius: 5px; font-size: 1.1em; cursor: pointer; font-weight: bold;">
+                    Register Now
+                </button>
+            </form>
         </section>
 
-        <section class="registration-section">
-            <div class="container">
-                <div class="registration-info">
-                    <h2>Registration Information</h2>
-                    <div class="info-grid">
-                        <div class="info-item">
-                            <h3>Registration Deadline</h3>
-                            <p>March 10, 2025 at 11:59 PM</p>
-                        </div>
-                        <div class="info-item">
-                            <h3>Registration Fee</h3>
-                            <p>₹200 per participant<br>(Covers all events + kit + meals)</p>
-                        </div>
-                        <div class="info-item">
-                            <h3>Payment Methods</h3>
-                            <p>Online Payment, UPI, Bank Transfer</p>
-                        </div>
-                        <div class="info-item">
-                            <h3>Confirmation</h3>
-                            <p>Email confirmation within 24 hours</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="registration-form-container">
-                    <h2>Registration Form</h2>
-                    <form class="registration-form" action="#" method="post">
-                        <fieldset>
-                            <legend>Personal Information</legend>
-                            
-                            <div class="form-group">
-                                <label for="fullName">Full Name *</label>
-                                <input type="text" id="fullName" name="fullName" required>
-                            </div>
-
-                            <div class="form-row">
-                                <div class="form-group">
-                                    <label for="email">Email Address *</label>
-                                    <input type="email" id="email" name="email" required>
-                                </div>
-                                <div class="form-group">
-                                    <label for="phone">Phone Number *</label>
-                                    <input type="tel" id="phone" name="phone" required>
-                                </div>
-                            </div>
-
-                            <div class="form-row">
-                                <div class="form-group">
-                                    <label for="college">College/University *</label>
-                                    <input type="text" id="college" name="college" required>
-                                </div>
-                                <div class="form-group">
-                                    <label for="year">Year of Study *</label>
-                                    <select id="year" name="year" required>
-                                        <option value="">Select Year</option>
-                                        <option value="1st">1st Year</option>
-                                        <option value="2nd">2nd Year</option>
-                                        <option value="3rd">3rd Year</option>
-                                        <option value="4th">4th Year</option>
-                                        <option value="postgrad">Post Graduate</option>
-                                    </select>
-                                </div>
-                            </div>
-
-                            <div class="form-row">
-                                <div class="form-group">
-                                    <label for="branch">Branch/Department *</label>
-                                    <input type="text" id="branch" name="branch" placeholder="e.g., Computer Science" required>
-                                </div>
-                                <div class="form-group">
-                                    <label for="rollNumber">Roll Number/Student ID</label>
-                                    <input type="text" id="rollNumber" name="rollNumber">
-                                </div>
-                            </div>
-                        </fieldset>
-
-                        <fieldset>
-                            <legend>Event Selection</legend>
-                            
-                            <div class="form-group">
-                                <label>Programming Competitions:</label>
-                                <div class="checkbox-group">
-                                    <div class="checkbox-item">
-                                        <input type="checkbox" id="codemaster" name="events" value="codemaster">
-                                        <label for="codemaster">CodeMaster Challenge (Individual)</label>
-                                    </div>
-                                    <div class="checkbox-item">
-                                        <input type="checkbox" id="hackathon" name="events" value="hackathon">
-                                        <label for="hackathon">Hackathon Supreme (Team: 2-4 members)</label>
-                                    </div>
-                                    <div class="checkbox-item">
-                                        <input type="checkbox" id="webdev" name="events" value="webdev">
-                                        <label for="webdev">Web Development Contest (Team: 1-3 members)</label>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="form-group">
-                                <label>Robotics & Hardware:</label>
-                                <div class="checkbox-group">
-                                    <div class="checkbox-item">
-                                        <input type="checkbox" id="roborace" name="events" value="roborace">
-                                        <label for="roborace">Robo Race (Team: 2-5 members)</label>
-                                    </div>
-                                    <div class="checkbox-item">
-                                        <input type="checkbox" id="linefollowing" name="events" value="linefollowing">
-                                        <label for="linefollowing">Line Following Bot (Team: 2-4 members)</label>
-                                    </div>
-                                    <div class="checkbox-item">
-                                        <input type="checkbox" id="arduino" name="events" value="arduino">
-                                        <label for="arduino">Arduino Innovation (Team: 1-3 members)</label>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="form-group">
-                                <label>Design & Innovation:</label>
-                                <div class="checkbox-group">
-                                    <div class="checkbox-item">
-                                        <input type="checkbox" id="uiux" name="events" value="uiux">
-                                        <label for="uiux">UI/UX Design Challenge (Individual/Pairs)</label>
-                                    </div>
-                                    <div class="checkbox-item">
-                                        <input type="checkbox" id="3dmodeling" name="events" value="3dmodeling">
-                                        <label for="3dmodeling">3D Modeling Contest (Individual)</label>
-                                    </div>
-                                    <div class="checkbox-item">
-                                        <input type="checkbox" id="digitalart" name="events" value="digitalart">
-                                        <label for="digitalart">Digital Art Showcase (Individual)</label>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="form-group">
-                                <label>Gaming & Entertainment:</label>
-                                <div class="checkbox-group">
-                                    <div class="checkbox-item">
-                                        <input type="checkbox" id="esports" name="events" value="esports">
-                                        <label for="esports">E-Sports Tournament (Team varies by game)</label>
-                                    </div>
-                                    <div class="checkbox-item">
-                                        <input type="checkbox" id="gamedev" name="events" value="gamedev">
-                                        <label for="gamedev">Game Development (Team: 1-4 members)</label>
-                                    </div>
-                                    <div class="checkbox-item">
-                                        <input type="checkbox" id="techquiz" name="events" value="techquiz">
-                                        <label for="techquiz">Tech Quiz Championship (Team: 2-3 members)</label>
-                                    </div>
-                                </div>
-                            </div>
-                        </fieldset>
-
-                        <fieldset>
-                            <legend>Team Information (if applicable)</legend>
-                            
-                            <div class="form-group">
-                                <label for="teamName">Team Name</label>
-                                <input type="text" id="teamName" name="teamName" placeholder="Enter team name for team events">
-                            </div>
-
-                            <div class="team-members">
-                                <h4>Team Members (for team events)</h4>
-                                
-                                <div class="form-row">
-                                    <div class="form-group">
-                                        <label for="member2Name">Member 2 Name</label>
-                                        <input type="text" id="member2Name" name="member2Name">
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="member2Email">Member 2 Email</label>
-                                        <input type="email" id="member2Email" name="member2Email">
-                                    </div>
-                                </div>
-
-                                <div class="form-row">
-                                    <div class="form-group">
-                                        <label for="member3Name">Member 3 Name</label>
-                                        <input type="text" id="member3Name" name="member3Name">
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="member3Email">Member 3 Email</label>
-                                        <input type="email" id="member3Email" name="member3Email">
-                                    </div>
-                                </div>
-
-                                <div class="form-row">
-                                    <div class="form-group">
-                                        <label for="member4Name">Member 4 Name</label>
-                                        <input type="text" id="member4Name" name="member4Name">
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="member4Email">Member 4 Email</label>
-                                        <input type="email" id="member4Email" name="member4Email">
-                                    </div>
-                                </div>
-                            </div>
-                        </fieldset>
-
-                        <fieldset>
-                            <legend>Additional Information</legend>
-                            
-                            <div class="form-group">
-                                <label for="experience">Previous Competition Experience</label>
-                                <textarea id="experience" name="experience" rows="3" placeholder="Briefly describe your previous competition experience (optional)"></textarea>
-                            </div>
-
-                            <div class="form-group">
-                                <label for="specialRequirements">Special Requirements/Accommodations</label>
-                                <textarea id="specialRequirements" name="specialRequirements" rows="2" placeholder="Any special accommodations needed (optional)"></textarea>
-                            </div>
-
-                            <div class="form-group">
-                                <label for="tshirtSize">T-Shirt Size *</label>
-                                <select id="tshirtSize" name="tshirtSize" required>
-                                    <option value="">Select Size</option>
-                                    <option value="XS">XS</option>
-                                    <option value="S">S</option>
-                                    <option value="M">M</option>
-                                    <option value="L">L</option>
-                                    <option value="XL">XL</option>
-                                    <option value="XXL">XXL</option>
-                                </select>
-                            </div>
-
-                            <div class="form-group">
-                                <label>How did you hear about TechFest 2025?</label>
-                                <div class="radio-group">
-                                    <div class="radio-item">
-                                        <input type="radio" id="college" name="hearAbout" value="college">
-                                        <label for="college">College Notice/Professor</label>
-                                    </div>
-                                    <div class="radio-item">
-                                        <input type="radio" id="social" name="hearAbout" value="social">
-                                        <label for="social">Social Media</label>
-                                    </div>
-                                    <div class="radio-item">
-                                        <input type="radio" id="friends" name="hearAbout" value="friends">
-                                        <label for="friends">Friends/Word of Mouth</label>
-                                    </div>
-                                    <div class="radio-item">
-                                        <input type="radio" id="website" name="hearAbout" value="website">
-                                        <label for="website">Official Website</label>
-                                    </div>
-                                    <div class="radio-item">
-                                        <input type="radio" id="other" name="hearAbout" value="other">
-                                        <label for="other">Other</label>
-                                    </div>
-                                </div>
-                            </div>
-                        </fieldset>
-
-                        <fieldset>
-                            <legend>Terms & Conditions</legend>
-                            
-                            <div class="form-group">
-                                <div class="checkbox-item">
-                                    <input type="checkbox" id="terms" name="terms" required>
-                                    <label for="terms">I agree to the terms and conditions of TechFest 2025 *</label>
-                                </div>
-                                <div class="checkbox-item">
-                                    <input type="checkbox" id="rules" name="rules" required>
-                                    <label for="rules">I understand and agree to follow all competition rules *</label>
-                                </div>
-                                <div class="checkbox-item">
-                                    <input type="checkbox" id="updates" name="updates">
-                                    <label for="updates">I want to receive updates about future events</label>
-                                </div>
-                            </div>
-                        </fieldset>
-
-                        <div class="form-actions">
-                            <button type="reset" class="btn btn-secondary">Clear Form</button>
-                            <button type="submit" class="btn btn-primary">Register Now</button>
-                        </div>
-                    </form>
-                </div>
-
-                <div class="payment-info">
-                    <h2>Payment Information</h2>
-                    <div class="payment-details">
-                        <h3>Registration Fee: ₹200 per participant</h3>
-                        <p>The registration fee includes:</p>
-                        <ul>
-                            <li>Access to all competitions</li>
-                            <li>TechFest 2025 participant kit</li>
-                            <li>Meals during the event (3 days)</li>
-                            <li>Certificate of participation</li>
-                            <li>Event T-shirt</li>
-                        </ul>
-                        
-                        <h3>Payment Methods:</h3>
-                        <div class="payment-methods">
-                            <div class="payment-method">
-                                <h4>UPI Payment</h4>
-                                <p>UPI ID: techfest2025@upi</p>
-                            </div>
-                            <div class="payment-method">
-                                <h4>Bank Transfer</h4>
-                                <p>Account: 1234567890<br>
-                                IFSC: TECH0001234<br>
-                                Bank: Tech University Bank</p>
-                            </div>
-                            <div class="payment-method">
-                                <h4>Online Gateway</h4>
-                                <p>Payment link will be sent after form submission</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+        <section style="background-color: #fff3cd; border: 1px solid #ffeaa7; border-radius: 10px; padding: 20px; margin-top: 30px;">
+            <h3 style="color: #856404; margin-top: 0;">Important Notes:</h3>
+            <ul style="color: #856404; line-height: 1.6;">
+                <li>Registration is free for all participants</li>
+                <li>Please carry a valid ID card on the event days</li>
+                <li>Team events require advance coordination with team members</li>
+                <li>Limited spots available for some events - register early!</li>
+                <li>Accommodation can be arranged for outstation participants</li>
+            </ul>
         </section>
     </main>
 
-    <footer>
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <h3>TechFest 2025</h3>
-                    <p>Annual Technical Festival</p>
-                </div>
-                <div class="footer-section">
-                    <h3>Quick Links</h3>
-                    <ul>
-                        <li><a href="events.html">Events</a></li>
-                        <li><a href="registration.html">Register</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                    </ul>
-                </div>
-                <div class="footer-section">
-                    <h3>Follow Us</h3>
-                    <div class="social-links">
-                        <a href="#">Facebook</a>
-                        <a href="#">Instagram</a>
-                        <a href="#">Twitter</a>
-                        <a href="#">LinkedIn</a>
-                    </div>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2025 TechFest. All rights reserved.</p>
-            </div>
-        </div>
-    </footer>
 </body>
 </html>

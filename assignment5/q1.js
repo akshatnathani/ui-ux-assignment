@@ -1,4 +1,4 @@
-const num1 = parseFloat(prompt("Enter first number:"));
+const num1 = parseFloat(("Enter first number:"));
 const num2 = parseFloat(prompt("Enter second number:"));
 
 const sum = num1 + num2;
